@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Split Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="loginPage" class="page active">
+    <h2>Login</h2>
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPass" placeholder="Password">
+    <button onclick="checkLogin()">Login</button>
+    <p id="loginError" class="error"></p>
+  </div>
+
+  <!-- Trip Page -->
+  <div id="tripPage" class="page hidden">
+    <h2>My Trips</h2>
+    <button id="addTripBtn">➕ Add Trip</button>
+    <div id="tripList"></div>
+  </div>
+
+  <!-- Calculator Page -->
+  <div id="calcPage" class="page hidden">
+    <h2 id="calcTitle">Trip Calculator</h2>
+
+    <!-- Add participants -->
+    <div class="section">
+      <h3>Participants</h3>
+      <input type="text" id="participantInput" placeholder="Enter name">
+      <button onclick="addParticipant()">Add</button>
+      <ul id="participantsList"></ul>
+    </div>
+
+    <!-- Add expenses -->
+    <div class="section">
+      <h3>Expenses</h3>
+      <input type="number" id="expenseAmount" placeholder="Amount">
+      <select id="payerSelect"></select>
+      <button onclick="addExpense()">Add Expense</button>
+      <ul id="expensesList"></ul>
+    </div>
+
+    <!-- Results -->
+    <div class="section">
+      <h3>Result</h3>
+      <div id="result"></div>
+    </div>
+
+    <button onclick="backToTrips()">⬅ Back to Trips</button>
+  </div>
+
+  <!-- Popup Modal for New Trip -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h3>New Trip</h3>
+      <input type="text" id="tripNameInput" placeholder="Enter trip name">
+      <button onclick="saveTrip()">Save</button>
+      <button onclick="closePopup()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

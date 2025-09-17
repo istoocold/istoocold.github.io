@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Fullscreen page style */
+.page {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page.active {
+  display: flex;
+}
+
+/* Inputs */
+input, select {
+  margin: 8px 0;
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  margin: 6px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-top: 8px;
+}
+
+/* Trip list */
+#tripList {
+  margin-top: 15px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.trip-item {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: #f1f1f1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.trip-item:hover {
+  background: #e0e0e0;
+}
+
+/* Popup modal */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+}
+
+/* Calculator sections */
+.section {
+  margin: 15px 0;
+  width: 90%;
+  max-width: 400px;
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 4px 0;
+  padding: 6px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
