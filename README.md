@@ -28,14 +28,14 @@ Use the hardcoded credentials:
 ### 2. Add a Trip
 Click "Add Trip" and provide a trip name (e.g., "Dehradun").
 
-![Add Trip Screenshot](images/add_trip.png)
+![Add Trip Screenshot](images/addtrip.png)
 
 ---
 
 ### 3. Add People
 Add the participants who are part of the trip.
 
-![Add People Screenshot](images/add_people.png)
+![Add People Screenshot](images/addperson.png)
 
 ----
 
@@ -44,7 +44,7 @@ Add the participants who are part of the trip.
 - Enter the amount
 - Select the person who paid from the dropdown
 
-![Add Expense Screenshot](images/add_expense.png)
+![Add Expense Screenshot](images/addexpense.png)
 
 -------
 
@@ -52,14 +52,14 @@ Add the participants who are part of the trip.
 Click "Calculate" to see the cost distribution.  
 Charts will display the total and individual expenses.
 
-![Charts Screenshot](images/charts.png)
+
 
 ----
 
 ### 6. Download PDF Report
 Export a detailed PDF file with expenses and balances.
 
-![PDF Screenshot](images/pdf.png)
+![PDF Screenshot](images/downloadpdf.png)
 
 ----
 
